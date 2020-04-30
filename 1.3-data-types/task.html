@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <input type="text" placeholder="Процентная ставка" id="percent"><br><br>
-    <input type="text" placeholder="Начальный взнос" id="contribution"><br><br>
-    <input type="text" placeholder="Общая стоимость" id="amount"><br><br>
-    <label>Срок ипотеки <input type="date" id="date"></label><br><br>
+    <label>Процентная ставка <input type="text" placeholder="Процентная ставка" id="percent"></label><br>
+    <span id="errPercent" style="color: red"></span><br>
+    <label>Начальный взнос <input type="text" placeholder="Начальный взнос" id="contribution"></label><br>
+    <span id="errContribution" style="color: red"></span><br>
+    <label>Общая стоимость <input type="text" placeholder="Общая стоимость" id="amount"></label><br>
+    <span id="errAmount" style="color: red"></span><br>
+    <label>Срок ипотеки <input type="date" id="date"></label><br>
+    <span id="errDate" style="color: red"></span><br>
     <button onClick="calculateMortgage()">Посчитать общую стоимость ипотеки</button>
     <span id="mortageResult"></span>
     <hr>
